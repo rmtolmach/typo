@@ -13,7 +13,7 @@ describe Admin::CategoriesController do
 
   it "test_new" do
     get :new
-    assert_response :redirect, :action => 'new'
+    response.should be_success
   end
 
   it "test_index" do
