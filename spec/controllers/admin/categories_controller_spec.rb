@@ -14,6 +14,7 @@ describe Admin::CategoriesController do
   it "test_new" do
     get :new
     response.should be_success
+    should render_template(:new)
   end
 
   it "test_index" do
