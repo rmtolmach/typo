@@ -8,9 +8,10 @@ Feature: Merge Blog
 
   Scenario: Merge articles
     Given I am on the manage articles page
+    Then I should see "My Shiny Weblog!"
     And "Goodbye World" has an id of 2
-    And "Hello World" has an id of 1
-    When I click on the article "Hello World!"
+    And "My Shiny Weblog!" has an id of 1
+    When I click on the article "My Shiny Weblog!"
     And I fill in "merge_with" with 2
     And I press "Merge"
     Then I should be on the manage articles page
