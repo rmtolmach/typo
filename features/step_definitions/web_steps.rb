@@ -290,11 +290,4 @@ Given /^"(.*?)" has an id of (\d+)$/ do |title, num|
   id = num
 end
 
-# Then /^(?:|I )should see title "([^"]*)"$/ do |text|
-#   Blog.new({:blog_name => 'Hello World!',
-#             :base_url  => 'http://localhost:3000'});
-#   new_blog = Blog.new.save!
-#   text = new_blog.blog_name
-# end
-
 ########
